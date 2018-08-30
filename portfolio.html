@@ -11,27 +11,25 @@
 	<link rel="stylesheet" type="text/css"
 	      href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
-<body class="content">
-	<video autoplay muted loop id="myVideo">
-		<source src="assets/video/snow.mp4" type="video/mp4">
-		 Your browser does not support HTML5 video.
-	</video>
-	<div >
-		<header class="h">ChitsanupongMuntilalai</header>
+<body>
+
+	<div class="header-container">
+		<header>ChitsanupongMuntilalai</header>
+
 		<nav>
 			<ul>
-				<li><a class="tap1" href="index.html" style="color:white">About</a></li>
-				<li><a class="tap2" href="portfolio.html" style="color:white">Portfolio</a></li>
+				<li class="border"><a href="index.html">About</a></li>
+				<li class="border"><a href="portfolio.html">Portfolio</a></li>
 			</ul>
 		</nav>
 	</div>
 
-	<div class="port">
-		<section>
-			<h2>Portfolio</h2>
+	<div class="main-container">
+		<section id="project-portfolio">
+			<h2>Game</h2>
 
 			<!-- Using single placeholder image for now. -->
-			<ul>
+			<ul class="project">
 				<li class="box"><div><img class="project" src="assets/images/R6.jpg" alt="Project 1"><span class="project-title" >Tom Clancy's Rainbow Six® Siege</span></div></li>
 				<li class="box"><div><img class="project" src="assets/images/csgo.png" alt="Project 1"><span class="project-title">Counter-Strike: Global Offensive</span></div></li>
 				<li class="box"><div><img class="project" src="assets/images/PUBG.jpg" alt="Project 1"><span class="project-title">PLAYERUNKNOWN'S BATTLEGROUNDS</span></div></li>
@@ -40,16 +38,18 @@
 			</ul>
     	</section>
     	
-    	<section class="con1">
-			<h3>Connect with Me</h3>
+    	<section id="social-links">
+    		<h3>Connect with Me</h3>
 			<ul>
-			  <li><a href="https://www.facebook.com/csnpmtll"><img class="icon" src="assets/images/facebook.png" alt="GitHub Profile"></a></li>
-			  <li><a href="mailto:csnpmtll@hotmail.com"><img class="icon" src="assets/images/Email.png" alt="GitHub Profile"></a></li>
-			  <li><a href="https://steamcommunity.com/id/RodmanInhuman/"><img class="icon" src="assets/images/steam.png" alt="GitHub Profile"></a></li>
-			</ul>
-	  	</section>
+        		<li><a href="https://www.facebook.com/csnpmtll"><img class="icon" src="assets/images/facebook.png" alt="GitHub Profile"></a></li>
+				<li><a href="mailto:csnpmtll@hotmail.com"><img class="icon" src="assets/images/Email.png" alt="GitHub Profile"></a></li>
+				<li><a href="https://steamcommunity.com/id/RodmanInhuman/"><img class="icon" src="assets/images/steam.png" alt="GitHub Profile"></a></li>
+      		</ul>
+    	</section>
 	</div>
-
+	<video autoplay loop id="video-background" muted plays-inline>
+	<source src="assets/video/snow.mp4" type="video/mp4">
+	</video>
 	<!-- Don't remove-->
 	<footer>&#64; Copyright 2017 Meggin Kearney Thank you for education.</footer>
 </body>

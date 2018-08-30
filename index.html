@@ -12,26 +12,23 @@
 	<!-- Linking Google Fonts -->
 	<link rel="stylesheet" type="text/css"
 	      href="https://fonts.googleapis.com/css?family=Montserrat">
-		  
 </head>
-<body class="content">
-	<video autoplay muted loop id="myVideo">
-		<source src="assets/video/snow.mp4" type="video/mp4">
-		 Your browser does not support HTML5 video.
-	</video>
-	
-	<div >
-		<header class="h">ChitsanupongMuntilalai</header>
+<body>
+
+	<div class="header-container">
+		<header>ChitsanupongMuntilalai</header>
+
 		<nav>
 			<ul>
-				<li><a class="tap1" href="index.html" style="color:white">About</a></li>
-				<li><a class="tap2" href="portfolio.html" style="color:white">Portfolio</a></li>
+				<li class="border"><a href="index.html">About</a></li>
+				<li class="border"><a href="portfolio.html">Portfolio</a></li>
 			</ul>
 		</nav>
 	</div>
+	
 
-	<div>
-		<section class="about">
+	<div class="main-container">
+		<section id="main-bio">
 			<h2>About Me</h2>
 			<img id="bio-image" src="assets/images/profile.jpg" alt="Your Name">
 			<p>Hi, My name is Boss. I'm 21 years old.</p>
@@ -40,7 +37,7 @@
 			<p>I like to play basketball.</p>
 		</section>
 		
-		<section class="friends">
+		<section id="myFriend">
 			<h3>My Friend</h3>
 			<ul>
 			  <li><a href=""><img class="icon" src="https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-1/c13.0.50.50/p50x50/12715516_1071227656275151_7830294439604615603_n.jpg?_nc_cat=0&_nc_eui2=AeEg9gSEIW29Qw6OFRIxh71C_YSywT6_NVcfqA6Wd5RUXMKg8XMMd_-u6hSIUEPFIbJzXVNYKIRD42-llpUruLdijOSXRZqUpXRmbcbmQFgCFg&oh=5ee657015d351a88c70c56144ef77df7&oe=5C008485" alt="GitHub Profile"></a></li>
@@ -49,13 +46,12 @@
 			</ul>
 		</section>
 		
-		<section class="skills">
+		<section id="skill">
 			<h2>Music</h2>
-			<iframe width="45%" height="250px" src="https://www.youtube.com/embed/LBr7kECsjcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			<iframe width="45%" height="250px" src="https://www.youtube.com/embed/_Yhyp-_hX2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/LBr7kECsjcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</section>
 
-		<section class="con">
+		<section id="social-links">
 			<h3>Connect with Me</h3>
 			<ul>
 			  <li><a href="https://www.facebook.com/csnpmtll"><img class="icon" src="assets/images/facebook.png" alt="GitHub Profile"></a></li>
@@ -64,8 +60,12 @@
 			</ul>
 	  	</section>
 
+		
+		
 	</div>
-	
+	<video autoplay loop id="video-background" muted plays-inline>
+	<source src="assets/video/snow.mp4" type="video/mp4">
+	</video>
 	<!-- Don't remove-->
 	<footer>&#64; Copyright 2017 Meggin Kearney Thank you for education.</footer>
 </body>

@@ -4,21 +4,20 @@
 }
 
 /* Some default document settings. */
-html,body {
-	color: #777777;
+body {
+	color: #3cf9f0;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 30px;
 	text-align: left;
 	/* Set width to 1200 instead of 960 for better layout (in my humble opinion). */
-	min-width:1000px;        /* Suppose you want minimum width of 1000px */
-	width: auto !important;  /* Firefox will set width as auto */
-	width:1000px;   
+	width: 1200px;
 }
+
 header	{
 	float: left;
-	background-color: #4aaaa5;
+	background-color: #ffffff00;
 	border-bottom: none;
-	color: #ffffff;
+	color: #3cf9f0;
 	height: 100%;
 	width: 270px;
 	margin-left: 125px;
@@ -33,7 +32,7 @@ header	{
 
 h2,
 h3	{
-	color: #4aaaa5;
+	color: #3cf9f0;
 	border-bottom:	3px solid #dddddd;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	margin-top: 1px;
@@ -65,7 +64,7 @@ li.border {
 }
 
 a {
-	color: #777777;
+	color: #3cf9f0;
 	text-decoration: none;
 }
 
@@ -91,9 +90,9 @@ a:hover {
 }
 
 section	{
-	background-color: #ffffff;
+	background-color: #ffffff00;
 	float: left;
-	color: #777777;
+	color: #3cf9f0;
 	border: 2px solid #dddddd;
 }
 
@@ -120,16 +119,16 @@ footer {
 	vertical-align: middle;
 	padding: 18px;
 	height: 70px;
-	background-color: #666666;
+	background-color: #ffffff00;
 	width: 100%;
 	border-bottom: none;
-	color: #777777;
+	color: #3e3e3e;
 	text-align: center;
 }
 
 .header-container {
-	border-bottom: 2px solid #cccccc;
-	background-color: #ffffff;
+	border-bottom: 2px solid #000000;
+	background-color: #ffffff00;
 	height: 60px;
 }
 
@@ -137,17 +136,17 @@ footer {
 	clear: both;
 	overflow: auto;
 	margin: 0 auto;
-	background-image: url("../images/background.png");
+	background-color:ffffff00;
 	height: 600px;
 	width: 100%;
-	border-bottom: 5px solid #4aaaa5;
+	border-bottom: 5px solid #000000;
 }
 
 .box {
 	display: inline-block;
-	width: 250px;
-	height: 100px;
-	margin: 20px;
+	width: 25%;
+	height: auto;
+	margin: 0px;
 }
 
 /* Rotates project in portfolio on hover. */
@@ -160,13 +159,10 @@ footer {
 }
 
 .project {
-	float: middle;
+	float: left;
 	position: relative;
-	top:	-20px;
-	left: 25%;
-	width: 50%;
-	height: auto;
-	
+	top:	-10px;
+	width: 100%;
 }
 
 .project-title {
@@ -182,7 +178,7 @@ footer {
 
 .button {
 	background-color: #4aaaa5;
-	color: #ffffff;
+	color: #3cf9f0;
 	width: 100px;
 	height: 40px;
 	font-size: 16px;
@@ -241,85 +237,14 @@ footer {
 	padding: 15px;
 	height: 500px;
 }
-#myVideo {
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		min-width: 100%; 
-		min-height: 100%;
-	}
-	.h{
-		position: fixed;
-		left: 0;
-		background-color: #0000;
-		color: #f1f1f1;
-	}
-	.about{
-		position: fixed;
-		text-align: left;
-		width: 50%;
-		height: auto;
-		top: 120px;
-		left: 100px;
-	}
-	.skills{
-		position: fixed;
-		text-align: left;
-		width: 50%;
-		height: auto;
-		top: 500px;
-		left: 100px;
-	}
-	.friends{
-		position: fixed;
-		text-align: center;
-		width: 25%;
-		height: auto;
-		top: 120px;
-		right: 100px;
-	}
-	.con{
-		position: fixed;
-		text-align: left;
-		width: 25%;
-		height: auto;
-		top: 500px;
-		right: 100px;
-		text-align: center;
-	}.con1{
-		position: fixed;
-		text-align: left;
-		width: 25%;
-		height: auto;
-		top: 120px;
-		right: 100px;
-		text-align: center;
-	}
-	.content {
-		position: fixed;
-		background: rgba(0, 0, 0, 0.1);
-		color: #f1f1f1;
-		width: 100%;
-		height: 100%;
-		padding: 20px;
-	}
-	.tap1{
-		position: fixed;
-		right: 200px;
-		background-color: #0000;
-		color: #f1f1f1;
-	}
-	.tap2{
-		position: fixed;
-		right: 100px;
-		background-color: #0000;
-		color: #f1f1f1;
-	}
-	.port{
-		position: fixed;
-		text-align: left;
-		width: 50%;
-		height: auto;
-		top: 120px;
-		left: 100px;
-	}
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
