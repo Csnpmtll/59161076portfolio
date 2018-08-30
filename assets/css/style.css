@@ -4,15 +4,16 @@
 }
 
 /* Some default document settings. */
-body {
+html,body {
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 30px;
 	text-align: left;
 	/* Set width to 1200 instead of 960 for better layout (in my humble opinion). */
-	width: 1200px;
+	min-width:1000px;        /* Suppose you want minimum width of 1000px */
+	width: auto !important;  /* Firefox will set width as auto */
+	width:1000px;   
 }
-
 header	{
 	float: left;
 	background-color: #4aaaa5;
@@ -159,10 +160,13 @@ footer {
 }
 
 .project {
-	float: left;
+	float: middle;
 	position: relative;
-	top:	-10px;
-	width: 100%;
+	top:	-20px;
+	left: 25%;
+	width: 50%;
+	height: auto;
+	
 }
 
 .project-title {
@@ -237,3 +241,85 @@ footer {
 	padding: 15px;
 	height: 500px;
 }
+#myVideo {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		min-width: 100%; 
+		min-height: 100%;
+	}
+	.h{
+		position: fixed;
+		left: 0;
+		background-color: #0000;
+		color: #f1f1f1;
+	}
+	.about{
+		position: fixed;
+		text-align: left;
+		width: 50%;
+		height: auto;
+		top: 120px;
+		left: 100px;
+	}
+	.skills{
+		position: fixed;
+		text-align: left;
+		width: 50%;
+		height: auto;
+		top: 500px;
+		left: 100px;
+	}
+	.friends{
+		position: fixed;
+		text-align: center;
+		width: 25%;
+		height: auto;
+		top: 120px;
+		right: 100px;
+	}
+	.con{
+		position: fixed;
+		text-align: left;
+		width: 25%;
+		height: auto;
+		top: 500px;
+		right: 100px;
+		text-align: center;
+	}.con1{
+		position: fixed;
+		text-align: left;
+		width: 25%;
+		height: auto;
+		top: 120px;
+		right: 100px;
+		text-align: center;
+	}
+	.content {
+		position: fixed;
+		background: rgba(0, 0, 0, 0.1);
+		color: #f1f1f1;
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+	}
+	.tap1{
+		position: fixed;
+		right: 200px;
+		background-color: #0000;
+		color: #f1f1f1;
+	}
+	.tap2{
+		position: fixed;
+		right: 100px;
+		background-color: #0000;
+		color: #f1f1f1;
+	}
+	.port{
+		position: fixed;
+		text-align: left;
+		width: 50%;
+		height: auto;
+		top: 120px;
+		left: 100px;
+	}
