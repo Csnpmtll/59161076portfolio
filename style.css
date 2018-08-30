@@ -240,11 +240,11 @@ footer {
 	height: 500px;
 }
 #myVideo {
-		position: absolute;
+		position: in;
 		right: 0;
 		bottom: 0;
-		min-width: 100%; 
-		min-height: 100%;
+		width: 100%; 
+		height: 100%;
 	}
 	.h{
 		position: fixed;
